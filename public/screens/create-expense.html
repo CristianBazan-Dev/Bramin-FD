@@ -30,11 +30,92 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>Bramin FD</title>
+    <title>Añadir gasto </title>
+
+    
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <div class="new-product-form">
+        <form action="" id="expenseForm">
+          <input
+            class="form-control"
+            id="expense"
+            type="text"
+            name="expense"
+            placeholder="Gasto"
+            autofocus
+          />
+          <input
+            class="form-control"
+            id="unitPrice"
+            type="number"
+            name="unitPrice"
+            class="form-control"
+            placeholder="Precio unitario"
+            step=".01"
+            autofocus
+          />
+          <input
+            class="form-control"
+            id="quantity"
+            type="number"
+            name="quantity"
+            class="form-control"
+            placeholder="Cantidad"
+            autofocus
+          />
+
+          <div class="form-control">
+            <label for="isInventory">Al inventario</label>
+            <input
+            type="checkbox"
+            
+            id="isInventary"
+            name="isInventary"
+
+     
+          />
+          </div>
+
+
+          <div class="form-control">
+            <label for="">Imagen</label>
+            <input
+            id="image"
+            type="file"
+            name="image"
+            class="form-control"
+            placeholder="Imagen"
+            autofocus
+          />
+  
+          </div>
+
+
+          <div class="form-control">
+            <label for="">Comprobante</label>
+            <input
+    
+            id="receipt"
+            type="file"
+            name="receipt"
+            class="form-control"
+            placeholder="Recibo"
+            autofocus
+          />
+          </div>
+
+
+          <div class="button-container">
+            <button class="form-control btn btn-new-product" type="submit">
+              Añadir
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -45,6 +126,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-
+    <script src="../functions/createExpense.js"></script>
   </body>
 </html>
