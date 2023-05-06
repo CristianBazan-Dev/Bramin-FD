@@ -6,7 +6,7 @@ import About from "./aboutPage/About";
 import Expenses from "./expenses/Expenses";
 import Requests from "./requests/Requests";
 import Services from "./services/Services";
-import Inventary from "./inventary/Inventary";
+import Inventory from "./inventory/Inventory";
 
 
 function Pages(props) {
@@ -18,7 +18,7 @@ function Pages(props) {
         <Route path="/" element={<Requests/>} />
         <Route path="/expenses" element={<Expenses/>} />
         <Route path="/services" element={<Services/>} />
-        <Route path="/inventary" element={<Inventary/>} />
+        <Route path="/inventory" element={<Inventory/>} />
       </Routes>
     </main>
   );

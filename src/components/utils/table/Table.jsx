@@ -38,7 +38,7 @@ const rows = [
 
 export default function Table({pageSelected, columns, rows}) {
   return (
-    <div style={{ height: 400, width: '100%' }} className='data-grid-container'>
+    <div style={{ height: 500, width: '100%' }} className='data-grid-container'>
 
 
       <DataGrid

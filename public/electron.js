@@ -19,8 +19,9 @@ let fifthWin;
 const createWindow = () => {
   // Create the browser window.
   win = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1280,
+    height: 720,
+    resizable: true, 
     webPreferences: {
       preload: path.join(__dirname, "preload.js"),
       nodeIntegration: true,
@@ -46,7 +47,6 @@ const createWindow = () => {
 // Algunas APIs pueden solamente ser usadas despues de que este evento ocurra.
 app.whenReady().then(() => {
   createWindow();
-  createThirdWin();
 
   app.on("activate", () => {
     // On macOS it's common to re-create a window in the app when the

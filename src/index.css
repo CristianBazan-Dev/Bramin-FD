@@ -8,6 +8,9 @@
   --spy3: #2c2827;
   --spy4: #610a10;
   --spy5: #57675c;
+
+
+  --shadow-light: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 /* Fonts */
@@ -19,6 +22,26 @@
   box-sizing: border-box;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--spy2);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--spy4);
+}
 
 html, body {
   width: 100%;
@@ -59,6 +82,11 @@ footer {
 
 /* Grid table  */
 @import url('./components/utils/table/table.css');
+
+
 /* Page selection  */
-/* Grid table  */
-@import url('./components/utils/page-selection/pageselection.css')
+@import url('./components/utils/page-selection/pageselection.css'); 
+
+
+/* Modal form  */
+@import url('./components/utils/modal-form/modalform.css')

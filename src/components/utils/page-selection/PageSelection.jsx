@@ -27,8 +27,8 @@ function PageSelection(props) {
           </Link>{" "}
         </li>
 
-        <li className={pathname === "/inventary" ? "active" : ""}>
-          <Link to="/inventary" id="inventary-li">
+        <li className={pathname === "/inventory" ? "active" : ""}>
+          <Link to="/inventory" id="inventary-li">
             Inventario
           </Link>{" "}
         </li>
